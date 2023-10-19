@@ -15,18 +15,48 @@ header{
     float: left;
     color: #180215;
     display: flex;
-    padding: 19px 18px;
+    padding: 19px;
     text-decoration: none;
     font-size: 19px;
   }
+ 
+/*pt miscarea mouse on*/
   .nav a:hover {
     background-color: #FF8BD2;
     color:#f2ff43 ;
+  }
+  /*cum arata curent*/
+  .nav a.active {
+    background-color: #531cad;
+    color: white;
   }
   .nav a.active {
     background-color: #531cad;
     color: white;
   }
-.topnav-right{
-    float:right;
+.btn{
+    float: right;
+    width: 100px;
+    height: 40px;
+    background: #FFBD59;
+    border: 2px solid #FFBD59;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.srch{
+    float: right;
+    width: 250px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 16px;
+   
 }
