@@ -1,0 +1,32 @@
+/*Culori folosite
+#FF8BD2 - roz
+#5CE1E6 - albastru
+#000000 - negru
+#FFDE59 - oranj deschis
+#FFBD59 - oranj inchis
+*/
+
+header{
+    background-color: #5CE1E6;
+    height: 60px;
+}
+
+  .nav a {
+    float: left;
+    color: #180215;
+    display: flex;
+    padding: 19px 18px;
+    text-decoration: none;
+    font-size: 19px;
+  }
+  .nav a:hover {
+    background-color: #FF8BD2;
+    color:#f2ff43 ;
+  }
+  .nav a.active {
+    background-color: #531cad;
+    color: white;
+  }
+.topnav-right{
+    float:right;
+}
