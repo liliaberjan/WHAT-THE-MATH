@@ -5,7 +5,12 @@
 #FFDE59 - oranj deschis
 #FFBD59 - oranj inchis
 */
-
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 header{
     background-color: #5CE1E6;
     height: 60px;
@@ -19,7 +24,19 @@ header{
     text-decoration: none;
     font-size: 19px;
   }
- 
+  header img{
+    align-items:start;
+    width: 60px;
+    height: 60px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: start;
+    justify-content: normal;
+}
 /*pt miscarea mouse on*/
   .nav a:hover {
     background-color: #FF8BD2;
