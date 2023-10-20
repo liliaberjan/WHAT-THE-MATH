@@ -15,7 +15,10 @@ header{
     background-color: #5CE1E6;
     height: 60px;
 }
-
+body{
+  background-color: white;
+  font-family: "Sofia", sans-serif;
+}
   .nav a {
     float: left;
     color: #180215;
@@ -27,30 +30,27 @@ header{
   header img{
     align-items:start;
     width: 60px;
-    height: 60px;
+    height: 50px;
 }
 
-ul{
+.nav ul{
     list-style: none;
     padding: 0;
     display: flex;
-    align-items: start;
+    align-items: stretch;
     justify-content: normal;
 }
-/*pt miscarea mouse on*/
+/*pt miscarea mouse pe bara de navigare*/
   .nav a:hover {
     background-color: #FF8BD2;
     color:#f2ff43 ;
   }
-  /*cum arata curent*/
+  /*cum arata curent what the math*/
   .nav a.active {
     background-color: #531cad;
     color: white;
   }
-  .nav a.active {
-    background-color: #531cad;
-    color: white;
-  }
+  /*cstilul pt serarch*/
   .nav input[type=text] {
     float: right;
     padding: 5px;
@@ -60,3 +60,26 @@ ul{
     width: 600px;
     font-size: 17px;
   }
+
+  section#main{
+    height: 800px;
+    justify-content: space-around;
+    background-size: 500px;
+    display:flex;
+
+}
+section#main div{
+    width: 850%;
+}
+/*stil pt logo*/
+section#main div h1{
+  font-size: 96px;
+}
+/*stil pt descriere*/
+section#main div p{
+  font-size: 24px;
+}
+/*stil pt descriere*/
+section#main div.c{
+foat:left;
+}
