@@ -1,59 +1,76 @@
 /*Culori folosite
 #FF8BD2 - roz
 #5CE1E6 - albastru
-#000000 - negru
+#180215 - violet inchis
 #FFDE59 - oranj deschis
 #FFBD59 - oranj inchis
 */
 * {
-    border: 0;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 header{
-    background-color: #5CE1E6;
-    height: 60px;
+  background-color: #5CE1E6;
+  height: 60px;
 }
 body{
-  background-color: white;
-  font-family: "Sofia", sans-serif;
+background-color: white;
+font-family: "Lato", sans-serif;
 }
-  .nav a {
-    float: left;
-    color: #180215;
-    display: flex;
-    padding: 19px;
-    text-decoration: none;
-    font-size: 19px;
-  }
-  header img{
-    align-items:start;
-    width: 60px;
-    height: 50px;
+.nav a {
+  float: left;
+  color: #180215;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 19px;
+  height: 60px;
+}
+header img{
+  align-items:start;
+  padding: 0;
+  width: 60px;
+  height: 60px;
 }
 
 .nav ul{
-    list-style: none;
-    padding: 0;
-    display: flex;
-    align-items: stretch;
-    justify-content: normal;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.nav a{
+  padding-top: 20px;
 }
 /*pt miscarea mouse pe bara de navigare*/
-  .nav a:hover {
-    background-color: #FF8BD2;
-    color:#f2ff43 ;
-  }
-  /*cum arata curent what the math*/
-  .nav a.active {
-    background-color: #531cad;
-    color: white;
-  }
-  /*cstilul pt serarch*/
+.nav a:hover {
+  background-color: #FF8BD2;
+  color:#f2ff43 ;
+  height: 60px;
+}
+
+/*cum arata curent what the math*/
+.nav a.active {
+  background-color: #531cad;
+  color: white;
+}
+/*cstilul pt search*/
+.nav input[type=text] {
+  float: right;
+  padding: 5px;
+  border: 1 solid black;
+  margin-top: 16px;
+  margin-right: 16px;
+  width: 600px;
+  font-size: 17px;
+}
+  /*https://www.w3schools.com/howto/howto_css_searchbar.asp bara de navigre*/
+  /*css tilul pt serarch*/
   .nav input[type=text] {
     float: right;
-    padding: 5px;
+    padding: 0px;
     border: 1 solid black;
     margin-top: 16px;
     margin-right: 16px;
@@ -61,25 +78,50 @@ body{
     font-size: 17px;
   }
 
-  section#main{
-    height: 800px;
-    justify-content: space-around;
-    background-size: 500px;
-    display:flex;
+#main{ 
+  text-align: center;
+  padding: 50px;
+ /* background-image: url(photo/brain_bg.jpg);
+  background-repeat: no-repeat;*/
+}
 
+
+#main h1{
+font-family: 'Nosifer';
+font-size: 34px;
+padding-bottom: 24px;
+color: black;
 }
-section#main div{
-    width: 850%;
-}
-/*stil pt logo*/
-section#main div h1{
-  font-size: 96px;
-}
-/*stil pt descriere*/
-section#main div p{
+#main p{
   font-size: 24px;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 14px;
 }
-/*stil pt descriere*/
-section#main div.c{
-foat:left;
+/*https://www.w3schools.com/howto/howto_css_fixed_footer.asp footer fixat*/
+  #footer
+{ position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #FF8BD2;
+  color:#180215;
+  text-align: center;
+  text-transform: uppercase;
 }
+
+  #footer p
+  { padding: 30px;
+    font-size: 15px;
+  }
+
+  #footer a
+  { color: #180215;
+    text-decoration: none;}
+  
+  #footer a:hover
+  { text-decoration: underline;
+    background-color: #FFDE59;
+    color:#180215 ;
+  }
+  
