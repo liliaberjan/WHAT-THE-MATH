@@ -131,9 +131,9 @@ color: black;
   color: black;
   padding-bottom: 14px;
 }
-/*https://www.w3schools.com/howto/howto_css_fixed_footer.asp footer fixat*/
+/*https://www.w3schools.com/howto/howto_css_fixed_footer.asp*/
   #footer
-{ position: fixed;
+{ position:fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -144,7 +144,7 @@ color: black;
 }
 
   #footer p
-  { padding: 30px;
+  { padding: 25px;
     font-size: 18px;
     font-family:'Courier New', Courier, monospace;
   }
@@ -205,19 +205,13 @@ color: black;
 
   /*Stil pt inregistrare https://www.youtube.com/watch?v=okbByPWS1Xc&list=PLImJ3umGjxdDqTlZhQxXBeGij9Oa9Xjnj*/
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
-  }
-  .body account{
+  
+  .bodyaccount{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
   }
   .containeraccount{
     max-width: 700px;
@@ -240,7 +234,6 @@ color: black;
     height: 3px;
     width: 30px;
     border-radius: 5px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
   }
   .content form .user-details{
     display: flex;
@@ -305,26 +298,24 @@ color: black;
    form input[type="radio"]{
      display: none;
    }
-   form .button{
+   form .buttonnews{
      height: 45px;
      margin: 35px 0
    }
-   form .button input{
+   form .buttonnews input{
      height: 100%;
      width: 100%;
      border-radius: 5px;
      border: none;
-     color: #fff;
+     color: #000;
+     background-color: #5CE1E6;
      font-size: 18px;
      font-weight: 500;
      letter-spacing: 1px;
      cursor: pointer;
      transition: all 0.3s ease;
-     background: linear-gradient(135deg, #71b7e6, #9b59b6);
    }
-   form .button input:hover{
-    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
-    }
+ 
    @media(max-width: 584px){
    .containeraccount{
     max-width: 100%;
@@ -350,3 +341,59 @@ color: black;
     }
   }
 /*sfarsit inregistrare*/
+
+/*stil news*/
+.news{
+  width: 100%;
+}
+.news-section{
+  width: 85%;
+  margin: 20px auto;
+}
+.news-section h4{
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+.news-section h1{
+  font-size: 40px;
+  color: #5CE1E6;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.news-section p{
+  font-size: 18px;
+  color: #531cad;
+  margin-top: 20px;
+}
+.bucati{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin: 25px auto;
+}
+.bucati .buc{
+  width: 100%;
+  position: relative;
+}
+.img-section img{
+  width: 100%;
+  height: auto;
+}
+.content{
+  padding: 15px 20px;
+}
+.content h4{
+  font-size: 24px;
+  color: #531cad;
+font-weight: bold;
+}
+.content p{
+color: #180215;
+font-size: 15px;
+}
+.content a{
+  text-decoration:none;
+  color: #000;
+}
+/*sfarsit news*/
