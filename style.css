@@ -6,7 +6,6 @@
 #FFBD59 - oranj inchis
 */
 
-
 * {
   border: 0;
   box-sizing: border-box;
@@ -14,386 +13,479 @@
   padding: 0;
 }
 
-nav{
+nav {
   display: flex;
   background-color: #5CE1E6;
   justify-content: space-between;
   text-align: center;
-  
+
 }
 
-nav a{
+nav a {
   color: #180215;
   text-decoration: none;
   font-size: 19px;
   height: 60px;
   background-image: url(photo/news.png);
   background-position: left top;
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   padding-left: 4em;
   padding-top: 1em;
   width: 100%;
 }
-nav a#nav-home{
+
+nav a#nav-home {
   background-image: none;
   text-align: center;
   padding: 0;
   padding-top: 1em;
   min-width: 12em;
 }
-nav a#nav-news{
+
+nav a#nav-news {
   background-image: url(photo/news.png);
   background-position: left;
 }
 
-nav a#nav-education{
+nav a#nav-education {
   background-image: url(photo/education.png);
 }
-nav a#nav-news{
+
+nav a#nav-news {
   background-image: url(photo/news.png);
 }
 
-nav a#nav-solving{
+nav a#nav-solving {
   background-image: url(photo/solving.png);
 }
-nav a#nav-expert{
+
+nav a#nav-expert {
   background-image: url(photo/expert.png);
 }
-nav a#nav-about{
+
+nav a#nav-about {
   background-image: url(photo/about.png);
 }
 
-nav a#nav-account{
+nav a#nav-account {
   width: 64px;
   background-color: #5CE1E6;
   padding: 0;
   margin: 0;
 }
 
-nav a#nav-account img{
+nav a#nav-account img {
   height: 100%;
 }
-@media screen and (max-width: 1898px){
-  nav{
-      flex-direction: column;
-  }
-  #main{
-    width: 100%;
-}
-}
+
+
 
 /*pt miscarea mouse pe bara de navigare*/
 nav a:hover {
   background-color: #FF8BD2;
-  color:#f2ff43 ;
+  color: #f2ff43;
   height: 60px;
   /*width: 13em;*/
 }
+
 /*cum arata curent what the math*/
 nav a.active {
   background-color: #531cad;
   color: white;
 }
-.body mainpage{
-background-color: white;
-font-family: "Lato", sans-serif;
+
+.body .mainpage {
+  background-color: white;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 0;
 }
 
-  /*https://www.w3schools.com/howto/howto_css_searchbar.asp bara de navigre*/
-  /*css tilul pt serarch*/
-  nav input[type=text] {
-    float: right;
-    padding: 0;
-    border: 1 solid black;
-    margin-top: 20px;
-    margin-right: 16px;
-    width: 100%;
-    height: 5%;
-    font-size: 17px;
-  }
-
-#main{ 
- text-align: center;
- background-image: url(photo/bg.png);
- width: 100%;
+/*https://www.w3schools.com/howto/howto_css_searchbar.asp bara de navigre*/
+/*css tilul pt serarch*/
+nav input[type=text] {
+  float: right;
+  padding: 0;
+  border: 1 solid black;
+  margin-top: 20px;
+  margin-right: 16px;
+  width: 100%;
+  height: 5%;
+  font-size: 17px;
+}
+.header{
+  min-height: 100vh;
+  background-image: url(photo/bg.png);
+}
+.header img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+#main {
+  text-align: center;
+  width: 100%;
 }
 
-#main h1{
-font-family: 'Nosifer';
-font-size: 34px;
-padding-bottom: 24px;
-color: black;
+#main h1 {
+  font-family: 'Nosifer';
+  font-size: 34px;
+  padding-bottom: 24px;
+  padding-top: 15px;
+  color: black;
 }
-#main p{
+
+#main p {
   font-size: 24px;
   font-weight: bold;
   color: black;
   padding-bottom: 14px;
 }
+
 /*https://www.w3schools.com/howto/howto_css_fixed_footer.asp*/
-  #footer
-{ position:fixed;
+#footer {
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: #FF8BD2;
-  color:#180215;
+  color: #180215;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
-  #footer p
-  { padding: 25px;
-    font-size: 18px;
-    font-family:'Courier New', Courier, monospace;
-  }
+#footer p {
+  padding: 25px;
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+}
 
-  #footer a
-  { color: #180215;
-    text-decoration: none;}
-  
-  #footer a:hover
-  { text-decoration: underline;
-    background-color: #FFDE59;
-    color:#180215 ;
-  }
-  /*style about us*/
- main{
-  width: 100%;
- }
- main img{
-  width: 100%;
- }
-  h1{
-    font-size: 64px;
-    font-family: 'Nosifer';
-    text-align: center;
-  }
-  h2{
-    font-size: 36px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-  }
-  p{
-    font-size: 24px;
-    font-family:'Courier New', Courier, monospace;
-    text-align: center;
-  }
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-  }
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    font-size: medium;
-  }
-  
-  .button:hover {
-    background-color: #5CE1E6;
-  }
-  /*sfarsit about us*/
+#footer a {
+  color: #180215;
+  text-decoration: none;
+}
 
-  /*Stil pt inregistrare https://www.youtube.com/watch?v=okbByPWS1Xc&list=PLImJ3umGjxdDqTlZhQxXBeGij9Oa9Xjnj*/
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-  
-  .bodyaccount{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
-  .containeraccount{
-    max-width: 700px;
-    width: 100%;
-    background-color: #fff;
-    padding: 25px 30px;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-  }
-  .containeraccount  .title{
-    font-size: 25px;
-    font-weight: 500;
-    position: relative;
-  }
-  .containeraccount .title::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 30px;
-    border-radius: 5px;
-  }
-  .content form .user-details{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 0 12px 0;
-  }
-  form .user-details .input-box{
-    margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
-  }
-  form .input-box span.details{
-    display: block;
-    font-weight: 500;
-    margin-bottom: 5px;
-  }
-  .user-details .input-box input{
-    height: 45px;
-    width: 100%;
-    outline: none;
-    font-size: 16px;
-    border-radius: 5px;
-    padding-left: 15px;
-    border: 1px solid #ccc;
-    border-bottom-width: 2px;
-    transition: all 0.3s ease;
-  }
-  .user-details .input-box input:focus,
-  .user-details .input-box input:valid{
-    border-color: #9b59b6;
-  }
-   form .gender-details .gender-title{
-    font-size: 20px;
-    font-weight: 500;
-   }
-   form .category{
-     display: flex;
-     width: 80%;
-     margin: 14px 0 ;
-     justify-content: space-between;
-   }
-   form .category label{
-     display: flex;
-     align-items: center;
-     cursor: pointer;
-   }
-   form .category label .dot{
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    margin-right: 10px;
-    background: #d9d9d9;
-    border: 5px solid transparent;
-    transition: all 0.3s ease;
-  }
-   #dot-1:checked ~ .category label .one,
-   #dot-2:checked ~ .category label .two,
-   #dot-3:checked ~ .category label .three{
-     background: #9b59b6;
-     border-color: #d9d9d9;
-   }
-   form input[type="radio"]{
-     display: none;
-   }
-   form .buttonnews{
-     height: 45px;
-     margin: 35px 0
-   }
-   form .buttonnews input{
-     height: 100%;
-     width: 100%;
-     border-radius: 5px;
-     border: none;
-     color: #000;
-     background-color: #5CE1E6;
-     font-size: 18px;
-     font-weight: 500;
-     letter-spacing: 1px;
-     cursor: pointer;
-     transition: all 0.3s ease;
-   }
- 
-   @media(max-width: 584px){
-   .containeraccount{
-    max-width: 100%;
-  }
-  form .user-details .input-box{
-      margin-bottom: 15px;
-      width: 100%;
-    }
-    form .category{
-      width: 100%;
-    }
-    .content form .user-details{
-      max-height: 300px;
-      overflow-y: scroll;
-    }
-    .user-details::-webkit-scrollbar{
-      width: 5px;
-    }
-    }
-    @media(max-width: 459px){
-    .containeraccount .content .category{
-      flex-direction: column;
-    }
-  }
+#footer a:hover {
+  text-decoration: underline;
+  background-color: #FFDE59;
+  color: #180215;
+}
+
+/*style about us*/
+main {
+  width: 100%;
+}
+
+main img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 64px;
+  font-family: 'Nosifer';
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+p {
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.button:hover {
+  background-color: #5CE1E6;
+}
+
+/*sfarsit about us*/
+
+/*Stil pt inregistrare https://www.youtube.com/watch?v=okbByPWS1Xc&list=PLImJ3umGjxdDqTlZhQxXBeGij9Oa9Xjnj*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.bodyaccount {
+  height: 100vh;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.containeraccount {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+}
+
+.containeraccount .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.containeraccount .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+}
+
+.content form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #9b59b6;
+}
+
+form .gender-details .gender-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .category {
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+
+form .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+form .category label .dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-1:checked~.category label .one,
+#dot-2:checked~.category label .two,
+#dot-3:checked~.category label .three {
+  background: #9b59b6;
+  border-color: #d9d9d9;
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+form .buttonnews {
+  height: 45px;
+  margin: 35px 0
+}
+
+form .buttonnews input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #000;
+  background-color: #5CE1E6;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 /*sfarsit inregistrare*/
 
 /*stil news*/
-.news{
+.news {
   width: 100%;
 }
-.news-section{
+
+.news-section {
   width: 85%;
   margin: 20px auto;
 }
-.news-section h4{
+
+.news-section h4 {
   width: 60%;
   text-align: center;
   margin: auto;
 }
-.news-section h1{
+
+.news-section h1 {
   font-size: 40px;
   color: #5CE1E6;
   text-transform: uppercase;
   margin-top: 50px;
 }
-.news-section p{
+
+.news-section p {
   font-size: 18px;
   color: #531cad;
   margin-top: 20px;
 }
-.bucati{
+
+.bucati {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   margin: 25px auto;
 }
-.bucati .buc{
+
+.bucati .buc {
   width: 100%;
   position: relative;
 }
-.img-section img{
+
+.buc .date {
+  position: absolute;
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 0;
+  padding: 6px, 15px;
+
+}
+
+.img-section img {
   width: 100%;
   height: auto;
 }
-.content{
+
+.content {
   padding: 15px 20px;
 }
-.content h4{
+
+.content h4 {
   font-size: 24px;
   color: #531cad;
-font-weight: bold;
+  font-weight: bold;
 }
-.content p{
-color: #180215;
-font-size: 15px;
+
+.content p {
+  color: #180215;
+  font-size: 15px;
 }
-.content a{
-  text-decoration:none;
+
+.content a {
+  text-decoration: none;
+  color: #531cad;
+}
+
+.content b {
+  text-decoration: underline;
   color: #000;
 }
+
+
+@media screen and (max-width: 1000px) {
+  nav {
+    flex-direction: column;
+  }
+
+  #main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .bucati{
+    grid-template-columns: repeat(2,1fr);
+  } 
+}
+@media screen and (max-width: 768px) {
+  .bucati {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 584px) {
+  .containeraccount {
+    max-width: 100%;
+  }
+
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  form .category {
+    width: 100%;
+  }
+
+  .content form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+@media screen and (max-width: 459px) {
+  .containeraccount .content .category {
+    flex-direction: column;
+  }
+}
+
 /*sfarsit news*/
