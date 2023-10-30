@@ -113,26 +113,30 @@ nav input[type=text] {
   width: 100%;
   padding-bottom: 30px;
 }
-.bgvideo{
+
+.bgvideo {
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: -100;
+
   width: 100%;
 
 }
-.video{
+
+.video {
   width: 100%;
   overflow: hidden;
   height: 700px;
   position: relative;
   top: 0;
   left: 0;
+}
+
+.video video {
+  object-fit: fill;
   z-index: -100;
 }
-video {
-  object-fit: fill;
-}
+
 .welcome {
   width: 100%;
   max-width: 900px;
@@ -190,24 +194,15 @@ video {
   background-color: #FF8BD2;
 }
 
-#main {
+.button .main {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  color: #f2ff43;
+  background-color: #FF8BD2;
   text-align: center;
-  width: 100%;
-}
-
-#main h1 {
-  font-family: 'Nosifer';
-  font-size: 34px;
-  padding-bottom: 24px;
-  padding-top: 15px;
-  color: black;
-}
-
-#main p {
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
-  padding-bottom: 14px;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 /*https://www.w3schools.com/howto/howto_css_fixed_footer.asp*/
@@ -292,6 +287,7 @@ video {
   cursor: pointer;
   font-size: medium;
 }
+
 
 .button:hover {
   background-color: #5CE1E6;
@@ -442,6 +438,13 @@ form .buttonnews input {
   margin: 0 0;
 }
 
+.description-news {
+  margin-bottom: 50px;
+  font-size: 28px;
+  color: #531cad;
+  text-align: center;
+}
+
 .news-section h4 {
   width: 60%;
   text-align: center;
@@ -452,12 +455,19 @@ form .buttonnews input {
   font-size: 40px;
   color: #5CE1E6;
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 45px;
+  margin-bottom: 45px;
   text-align: center;
 }
 
 .news-section p {
-  font-size: 28px;
+  font-size: 30px;
+  color: #531cad;
+  text-align: center;
+}
+
+.date p {
+  font-size: 20px;
   color: #531cad;
   text-align: center;
 }
@@ -500,7 +510,7 @@ form .buttonnews input {
 
 .content p {
   color: #180215;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .content a {
@@ -537,10 +547,11 @@ form .buttonnews input {
   .bucati {
     grid-template-columns: 1fr;
   }
-    .grid-container {
-        grid-template-columns: 1fr; 
-    }
-  
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 @media screen and (max-width: 584px) {
@@ -573,14 +584,30 @@ form .buttonnews input {
   }
 }
 
-@media screen and (min-aspect-ratio: 16/9){
-  .bgvideo{
+@media screen and (min-aspect-ratio: 16/9) {
+  .bgvideo {
     height: auto;
   }
 }
-@media screen and (max-aspect-ratio: 16/9){
-  .bgvideo{
+
+@media screen and (max-aspect-ratio: 16/9) {
+  .bgvideo {
     width: auto;
   }
 }
-/*sfarsit news*/
+
+.container{
+  width: 1000px;
+  margin: auto 0;
+  min-height: 100vh;
+}
+
+.container .row {
+  display: flex;
+  width: 100%;
+  border: 1px solid red;
+
+}
+.container .row .col {
+  width: 100%;
+}
