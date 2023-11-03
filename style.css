@@ -451,8 +451,7 @@ form .buttonnews input {
 
 .news-section h1 {
   font-size: 40px;
-  color: #5CE1E6;
-  text-transform: uppercase;
+  color: #531cad;
   margin-top: 45px;
   margin-bottom: 45px;
   text-align: center;
@@ -555,6 +554,10 @@ form .buttonnews input {
   .bucati {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .container-math-1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -566,6 +569,10 @@ form .buttonnews input {
     grid-template-columns: 1fr;
   }
 
+  .container-math-1 {
+    grid-template-columns: 1fr;
+  }
+
   .row-1 {
     flex-direction: column;
   }
@@ -574,6 +581,12 @@ form .buttonnews input {
 @media screen and (max-width: 584px) {
   .containeraccount {
     max-width: 100%;
+  }
+
+  .column,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
   }
 
   form .user-details .input-box {
@@ -808,4 +821,121 @@ form .buttonnews input {
   font-size: 20px;
   color: #9b59b6;
   text-align: center;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.container-solving h1 {
+  text-align: center;
+  color: #531cad;
+}
+
+.column img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #5CE1E6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.row-expert {
+  min-height: 100vh;
+}
+
+.row-expert {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  margin: 25px ;
+}
+
+.img-expert img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.expert h1 {
+  font-style: italic;
+  font-weight: 70px;
+  font-size: 30px;
+  color: #531cad;
+  text-align: center;
+  margin-top: 20px;
+}
+.expert h4 {
+  font-style: italic;
+  font-weight: 20px;
+  font-size: 30px;
+  color: #531cad;
+  text-align: center;
+  margin-top: 20px;
+}
+.expert p {
+  font-size: 20px;
+  color: #620e93;
+  text-align: center;
+}
+.expert h2 {
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+.button-contact {
+  display: inline-block;
+  width: 100%;
+  color: #f2ff43;
+  background-color: #FF8BD2;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.button-contact:hover {
+  background-color: #5CE1E6;
+}
+.expert{
+  padding-bottom: 0px;
+}
+.container-solving{
+  padding-top: 30px;
+  min-height: 80vh;
+}
+.expert{
+  min-height: 200vh;
+  width: 100%;
 }
