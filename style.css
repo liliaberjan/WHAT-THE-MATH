@@ -118,15 +118,13 @@ nav input[type=text] {
   position: absolute;
   left: 0;
   bottom: 0;
-
   width: 100%;
-
 }
 
 .video {
   width: 100%;
   overflow: hidden;
-  height: 700px;
+  height: 650px;
   position: relative;
   top: 0;
   left: 0;
@@ -535,6 +533,22 @@ form .buttonnews input {
   .about {
     width: 100%;
   }
+
+  .row-1 {
+    flex-direction: column;
+  }
+
+  .row-2 {
+    flex-direction: column;
+  }
+
+  .row-3 {
+    flex-direction: column;
+  }
+
+  .row-4 {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -552,6 +566,9 @@ form .buttonnews input {
     grid-template-columns: 1fr;
   }
 
+  .row-1 {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 584px) {
@@ -596,18 +613,199 @@ form .buttonnews input {
   }
 }
 
-.container{
-  width: 1000px;
+.container {
   margin: auto 0;
   min-height: 100vh;
+  padding: 0 0;
+  width: 100%;
 }
 
-.container .row {
+.container .row-1 {
   display: flex;
+  justify-content: stretch;
   width: 100%;
-  border: 1px solid red;
-
+  background-color: #fff;
 }
-.container .row .col {
+
+.container .row-2 {
+  display: flex;
+  justify-content: stretch;
   width: 100%;
+  background-color: #FF8BD2;
+}
+
+.container .row-3 {
+  display: flex;
+  justify-content: stretch;
+  width: 100%;
+  background-color: #5CE1E6;
+}
+
+.container .row-4 {
+  display: flex;
+  justify-content: stretch;
+  width: 100%;
+  background-color: #f2ff43;
+  margin-bottom: 50px;
+}
+
+.container .col {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.col h1 {
+  margin: auto;
+  width: 80%;
+  font-size: 52px;
+  text-align: center;
+  font-family: cursive;
+}
+
+.col p {
+  width: 80%;
+  font-size: 22px;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.col img {
+  margin-top: 30px;
+  display: block;
+  margin: auto;
+  justify-content: center;
+  border-radius: 50%;
+  border: 3px solid #000;
+  width: 20%;
+}
+
+.video-main-section {
+  width: 80%;
+  margin-top: 80px;
+  margin-left: 60px;
+  border-radius: 100px;
+}
+
+.col .button-section {
+  border: 2px solid #000;
+  color: #180215;
+  text-align: center;
+  cursor: pointer;
+  font-size: medium;
+  text-decoration: none;
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 50px;
+}
+
+.container-math {
+  display: block;
+  margin: auto 0;
+  text-align: center;
+  padding: 0 0;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.row-math-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.row-math h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 100px;
+  color: #620e93;
+  text-align: center;
+  margin: 20px;
+}
+
+.row-math-1 h2 {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  color: #531cad;
+  text-align: center;
+  margin: 15px;
+}
+
+.container-math img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 120px;
+  width: 30%;
+}
+
+.video-math {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  max-height: 500px;
+}
+
+.welcome .math-logo {
+  font-weight: 800;
+  font-size: 87px;
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.header-math {
+  align-items: center;
+  margin: auto auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+}
+
+.welcome h3 {
+  padding-top: 30px;
+  font-weight: 800;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+.container-math-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.block {
+  padding: 30px 30px;
+  margin: 0 0;
+}
+
+.container-math-1 h1 {
+  font-style: italic;
+  font-weight: 70px;
+  font-size: 30px;
+  color: #531cad;
+  text-align: center;
+  border-left: 6px solid #FF8BD2;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.container-math-1 p {
+  font-style: bold;
+  font-weight: 50px;
+  font-size: 20px;
+  color: #9b59b6;
+  text-align: center;
 }
