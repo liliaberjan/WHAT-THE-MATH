@@ -285,7 +285,18 @@ nav input[type=text] {
   cursor: pointer;
   font-size: medium;
 }
-
+.button-solving{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  width: 100%;
+  color: #f2ff43;
+  background-color: #FF8BD2;
+  text-align: center;
+  cursor: pointer;
+  font-size: medium;
+}
 
 .button:hover {
   background-color: #5CE1E6;
@@ -558,6 +569,10 @@ form .buttonnews input {
   .container-math-1 {
     grid-template-columns: repeat(2, 1fr);
   }
+  .row-expert {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ 
 }
 
 @media screen and (max-width: 768px) {
@@ -575,6 +590,9 @@ form .buttonnews input {
 
   .row-1 {
     flex-direction: column;
+  }
+  .row-expert {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -713,6 +731,9 @@ form .buttonnews input {
   margin-top: 2em;
   margin-bottom: 2em;
   border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-math {
@@ -871,22 +892,22 @@ input[type=submit] {
   cursor: pointer;
 }
 
-.row-expert {
-  min-height: 100vh;
-}
 
 .row-expert {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
-  margin: 25px ;
+  margin: 25px;
 }
 
-.img-expert img {
+.col-expert img {
   width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.col-expert .content{
+  min-height: 250px;
 }
 
 .expert h1 {
@@ -897,6 +918,7 @@ input[type=submit] {
   text-align: center;
   margin-top: 20px;
 }
+
 .expert h4 {
   font-style: italic;
   font-weight: 20px;
@@ -905,16 +927,19 @@ input[type=submit] {
   text-align: center;
   margin-top: 20px;
 }
+
 .expert p {
   font-size: 20px;
   color: #620e93;
   text-align: center;
 }
+
 .expert h2 {
   font-size: 25px;
   color: black;
   text-align: center;
 }
+
 .button-contact {
   display: inline-block;
   width: 100%;
@@ -928,14 +953,17 @@ input[type=submit] {
 .button-contact:hover {
   background-color: #5CE1E6;
 }
-.expert{
+
+.expert {
   padding-bottom: 0px;
 }
-.container-solving{
+
+.container-solving {
   padding-top: 30px;
   min-height: 80vh;
 }
-.expert{
+
+.expert {
   min-height: 200vh;
   width: 100%;
 }
