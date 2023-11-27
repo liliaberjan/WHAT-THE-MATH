@@ -652,6 +652,7 @@ form .buttonnews input {
 }
 
 .container .row-1 {
+  margin-top: 35px;
   display: flex;
   justify-content: stretch;
   width: 100%;
